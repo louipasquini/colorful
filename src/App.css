@@ -3,7 +3,7 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: centers;
+  align-items: center;
 }
 
 .panel {
@@ -296,4 +296,157 @@
 .help-close:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-1px);
+}
+
+/* Responsividade para iPad */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .panel {
+    width: 90dvw;
+    height: 100px;
+    gap: 15px;
+    padding: 0 15px;
+  }
+  
+  .panel-input {
+    height: 45px;
+    font-size: 1.3rem;
+  }
+  
+  .panel-random-btn,
+  .panel-color-picker-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+  
+  .navigation-buttons {
+    top: 15px;
+    left: 15px;
+  }
+  
+  .nav-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+  
+  .top-right-buttons {
+    top: 15px;
+    right: 15px;
+  }
+  
+  .help-btn, .share-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+  
+  .help-content {
+    max-width: 350px;
+    padding: 20px;
+  }
+  
+  .help-content h3 {
+    font-size: 18px;
+  }
+  
+  .help-key {
+    padding: 5px 10px;
+    font-size: 13px;
+    min-width: 50px;
+  }
+  
+  .help-desc {
+    font-size: 13px;
+  }
+}
+
+/* Responsividade para tablets menores */
+@media (max-width: 768px) and (min-width: 481px) {
+  .panel {
+    width: 95dvw;
+    height: 90px;
+    gap: 10px;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .panel-input {
+    height: 40px;
+    font-size: 1.1rem;
+    min-width: 120px;
+  }
+  
+  .panel-input[type="number"] {
+    min-width: 80px;
+  }
+  
+  .panel-random-btn,
+  .panel-color-picker-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+  
+  .navigation-buttons {
+    top: 10px;
+    left: 10px;
+  }
+  
+  .nav-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+  
+  .top-right-buttons {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .help-btn, .share-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+  
+  .help-content {
+    max-width: 300px;
+    padding: 15px;
+  }
+  
+  .help-content h3 {
+    font-size: 16px;
+  }
+  
+  .help-key {
+    padding: 4px 8px;
+    font-size: 12px;
+    min-width: 45px;
+  }
+  
+  .help-desc {
+    font-size: 12px;
+  }
+}
+
+/* Ajustes para orientação landscape em tablets */
+@media (max-width: 1024px) and (min-width: 769px) and (orientation: landscape) {
+  .panel {
+    top: 85%;
+    height: 80px;
+  }
+  
+  .panel-input {
+    height: 35px;
+    font-size: 1.1rem;
+  }
+  
+  .panel-random-btn,
+  .panel-color-picker-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1.1rem;
+  }
 }

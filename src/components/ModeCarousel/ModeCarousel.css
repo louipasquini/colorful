@@ -87,3 +87,37 @@
 .mode-carousel:hover .carousel-text {
   color: rgba(255, 255, 255, 0.9);
 }
+
+/* Responsividade para iPad */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .mode-carousel {
+    height: 45px;
+    padding: 0 8px;
+  }
+  
+  .carousel-btn {
+    font-size: 1.8rem;
+    min-width: 35px;
+  }
+  
+  .carousel-text {
+    font-size: 1.3rem;
+  }
+}
+
+/* Responsividade para tablets menores */
+@media (max-width: 768px) and (min-width: 481px) {
+  .mode-carousel {
+    height: 40px;
+    padding: 0 6px;
+  }
+  
+  .carousel-btn {
+    font-size: 1.6rem;
+    min-width: 32px;
+  }
+  
+  .carousel-text {
+    font-size: 1.1rem;
+  }
+}

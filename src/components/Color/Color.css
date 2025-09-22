@@ -169,3 +169,97 @@
 .copy-btn:active {
     transform: scale(0.95);
 }
+
+/* Responsividade para iPad */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .color-info {
+    padding: 10px;
+  }
+  
+  .color-name {
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+  }
+  
+  .color-picker-btn {
+    font-size: 0.7rem;
+    padding: 3px 5px;
+    min-width: 22px;
+    height: 18px;
+  }
+  
+  .color-values {
+    gap: 3px;
+  }
+  
+  .value-label {
+    font-size: 0.65rem;
+  }
+  
+  .value-container {
+    padding: 3px 5px;
+  }
+  
+  .value-text {
+    font-size: 0.7rem;
+  }
+  
+  .edit-input {
+    font-size: 0.7rem;
+    padding: 1px 3px;
+  }
+  
+  .copy-btn {
+    font-size: 0.7rem;
+    padding: 1px 3px;
+    min-width: 18px;
+    height: 18px;
+  }
+}
+
+/* Responsividade para tablets menores */
+@media (max-width: 768px) and (min-width: 481px) {
+  .color-info {
+    padding: 8px;
+  }
+  
+  .color-name {
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+  }
+  
+  .color-picker-btn {
+    font-size: 0.65rem;
+    padding: 2px 4px;
+    min-width: 20px;
+    height: 16px;
+  }
+  
+  .color-values {
+    gap: 2px;
+  }
+  
+  .value-label {
+    font-size: 0.6rem;
+  }
+  
+  .value-container {
+    padding: 2px 4px;
+  }
+  
+  .value-text {
+    font-size: 0.65rem;
+  }
+  
+  .edit-input {
+    font-size: 0.65rem;
+    padding: 1px 2px;
+  }
+  
+  .copy-btn {
+    font-size: 0.65rem;
+    padding: 1px 2px;
+    min-width: 16px;
+    height: 16px;
+  }
+}

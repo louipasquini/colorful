@@ -3,8 +3,11 @@ import './App.css'
 import Color from './components/Color/Color'
 import ModeCarousel from './components/ModeCarousel/ModeCarousel'
 import ColorPicker from './components/ColorPicker/ColorPicker'
+import MobileWIP from './components/MobileWIP/MobileWIP'
+import useDeviceDetection from './hooks/useDeviceDetection'
 
 function App() {
+  const { deviceType } = useDeviceDetection()
   const [scheme, setScheme] = useState([])
   const [mode, setMode] = useState('monochrome')
   const [count, setCount] = useState(5)
@@ -18,6 +21,24 @@ function App() {
   const [history, setHistory] = useState([])
   const [historyIndex, setHistoryIndex] = useState(-1)
   const [showHelp, setShowHelp] = useState(false)
+
+  // Debug: Log do tipo de dispositivo
+  console.log('Device type detected:', deviceType)
+
+  // Mostrar página de WIP para mobile
+  if (deviceType === 'mobile') {
+    console.log('Rendering MobileWIP component')
+    return <MobileWIP />
+  }
+
+  // Fallback de emergência - se nada for detectado, mostrar mobile WIP
+  if (!deviceType || deviceType === 'desktop') {
+    const width = window.innerWidth
+    if (width <= 768) {
+      console.log('Fallback: Rendering MobileWIP for small screen')
+      return <MobileWIP />
+    }
+  }
 
   // Comandos de teclado
   useEffect(() => {

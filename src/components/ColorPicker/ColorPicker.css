@@ -283,7 +283,102 @@
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
 }
 
-/* Responsividade */
+/* Responsividade para iPad */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .color-picker-modal {
+    max-width: 400px;
+    max-height: 80vh;
+  }
+  
+  .color-picker-content {
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .color-picker-main {
+    gap: 10px;
+  }
+  
+  .color-canvas {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .hue-canvas {
+    width: 20px;
+    height: 140px;
+  }
+  
+  .color-preview {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .color-inputs {
+    min-width: 180px;
+    gap: 10px;
+  }
+  
+  .color-input {
+    font-size: 0.75rem;
+    padding: 5px 6px;
+  }
+  
+  .input-group label {
+    font-size: 0.65rem;
+  }
+}
+
+/* Responsividade para tablets menores */
+@media (max-width: 768px) and (min-width: 481px) {
+  .color-picker-modal {
+    max-width: 350px;
+    max-height: 75vh;
+  }
+  
+  .color-picker-content {
+    flex-direction: column;
+    gap: 15px;
+    padding: 12px;
+  }
+  
+  .color-picker-main {
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .color-canvas {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .hue-canvas {
+    width: 18px;
+    height: 120px;
+  }
+  
+  .color-preview {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .color-inputs {
+    min-width: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  
+  .color-input {
+    font-size: 0.7rem;
+    padding: 4px 5px;
+  }
+  
+  .input-group label {
+    font-size: 0.6rem;
+  }
+}
+
+/* Responsividade para mobile */
 @media (max-width: 600px) {
   .color-picker-content {
     flex-direction: column;
